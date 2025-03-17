@@ -1,5 +1,5 @@
 export const profile = {
-	fullName: 'Yaseswini Neelamraju,PhD',
+	fullName: 'Yaseswini Neelamraju',
 	title: 'Research Scientist, Bioinformatics & Computational Biology',
 	institute: 'University of Virginia',
 	author_name: 'NeelamrajuY', // Author name to be highlighted in the papers section
@@ -11,11 +11,11 @@ export const profile = {
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
 	email: '',
-	linkedin: '',
+	linkedin: 'www.linkedin.com/in/yaseswinineelamraju',
 	x: 'https://www.x.com/',
-	github: '',
+	github: 'https://github.com/Yaseswini',
 	gitlab: '',
-	scholar: '',
+	scholar: 'https://scholar.google.com/citations?user=wzrrprAAAAAJ',
 	inspire: '',
 	arxiv: '',
 }
