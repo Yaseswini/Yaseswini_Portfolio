@@ -1,9 +1,9 @@
 export const experiences = [
 	{
-		company: '',
-		time: '',
-		title: '',
-		location: '',
+		company: 'University of Virginia',
+		time: '2017 Feb - 2018 Aug',
+		title: 'Bioinformatics Analyst',
+		location: 'Charlottesville',
 		description: '',
 	},
 	// {
