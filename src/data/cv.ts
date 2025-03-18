@@ -26,7 +26,7 @@ export const experiences = [
 		title: 'Bioinformatician',
 		location: 'Indianapolis',
 		description: '',
-	}
+	},
 	// {
 	// 	company: 'Radium Institute (Institut du Radium)',
 	// 	time: '1914 - 1934',
@@ -57,7 +57,7 @@ export const education = [
 		degree: 'Bachelor of Technology(B.Tech)',
 		location: 'Hyderabad,India',
 		description: '',
-	}
+	},
 	// {
 	// 	school: 'University of Paris',
 	// 	time: '1891 - 1895',
