@@ -2,7 +2,7 @@ export const profile = {
 	fullName: 'Yaseswini Neelamraju',
 	title: 'Research Scientist, Bioinformatics & Computational Biology',
 	institute: 'University of Virginia',
-	author_name: 'NeelamrajuY', // Author name to be highlighted in the papers section
+	author_name: 'Yaseswini Neelamraju', // Author name to be highlighted in the papers section
 	research_areas: [
 		
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
