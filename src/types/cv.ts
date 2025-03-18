@@ -1,3 +1,5 @@
+// this cv.ts is in the `types` folder
+
 export interface Experience {
   company: string;
   time: string;

@@ -1,3 +1,5 @@
+// This cv.ts file is in the `data` folder // 
+
 export const experiences = [
 	{
 		company: 'University of Virginia',
