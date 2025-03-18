@@ -13,7 +13,7 @@ export const profile = {
 export const social = {
 	email: '',
 	linkedin: 'www.linkedin.com/in/yaseswinineelamraju',
-	// x: 'https://www.x.com/',
+	x: '',
 	github: 'https://github.com/Yaseswini',
 	gitlab: '',
 	scholar: 'https://scholar.google.com/citations?user=wzrrprAAAAAJ',
