@@ -81,11 +81,11 @@ export const skills = [
 
 export const publications = [
 	{
-		title: '',
-		authors: '',
-		journal: '',
-		time: '',
-		link: '',
+		title: 'Integrative analysis identifies an older female-linked AML patient group with better risk in ECOG-ACRIN Cancer Research Group’s clinical trial E3999',
+		authors: 'Franck Rapaport, Kenneth Seier, Yaseswini Neelamraju, Duane Hassane, Timour Baslan, Daniel T Gildea, Samuel Haddox, Tak Lee, H Moses Murdock, Caroline Sheridan, Alexis Thurmond, Ling Wang, Martin Carroll, Larry D Cripe, Hugo Fernandez, Christopher E Mason, Elisabeth Paietta, Gail J Roboz, Zhuoxin Sun, Martin S Tallman, Yanming Zhang, Mithat Gönen, Ross Levine, Ari M Melnick, Maria Kleppe, Francine E Garrett-Bakelman',
+		journal: 'Blood Cancer Journal',
+		time: '2022/9/23',
+		link: 'https://www.nature.com/articles/s41408-022-00736-z',
 		abstract: '',
 	},
 	// {
