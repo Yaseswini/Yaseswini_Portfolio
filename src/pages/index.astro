@@ -1,57 +1,40 @@
 import Layout from '../layouts/Layout.astro'
 
 import { profile } from '@/settings'
-import { publications } from '@/data/cv'
+import { publications, experiences, education } from '@/data/cv'
 import ProfilePictures from '@/assets/profile_pictures.jpg'
 import Hero from '@/components/ui/Hero.astro'
 import Grid from '@/components/ui/Grid.astro'
 import ArticleList from '@/components/ui/ArticleList.astro'
-
-import { experiences, education } from '../data/cv'
 import CvTimeline from '@/components/ui/CvTimeline.astro'
 
 import type { Experience, Education } from '../types/cv'
-import List from '@/components/ui/List.astro'
-// import PublicationsList from '@/components/ui/PublicationsList.astro'
 
-let orderedExperiences: Experience[] = [] // Fixed typo: 'orderd' -> 'ordered'
-let orderedEducations: Education[] = [] // Fixed typo: 'orderd' -> 'ordered'
-// let orderedPublications: Publication[] = []
+let orderedExperiences: Experience[] = []
+let orderedEducations: Education[] = []
 
-// Generic function to order elements by date
+// Function to order elements based on time
 const orderElement = <T extends { time: string }>(a: T, b: T) => {
   const presentValues = ['present', 'now', 'current', 'today']
-  
-  // If the date is 'present', it should be the first element
   if (presentValues.includes((a['time'] as string)?.split(' - ')[1]?.toLowerCase())) {
-    return -1
+    return -1 // If the date is 'present', it should be the first element
   }
-  
   const dateA = new Date((a['time'] as string)?.split(' - ')[1])
   const dateB = new Date((b['time'] as string)?.split(' - ')[1])
-  
   return dateB.getTime() - dateA.getTime()
 }
 
-// Sort experiences if available
+// Sort experiences and education
 if (experiences.length > 0) {
   orderedExperiences = experiences.sort((a, b) => orderElement(a, b))
 }
 
-// Sort educations if available
 if (education.length > 0) {
   orderedEducations = education.sort((a, b) => orderElement(a, b))
 }
 
-// Sort publications if available (commented out for now)
-// if (publications.length > 0) {
-//   orderedPublications = publications.sort((a, b) => orderElement(a, b))
-// }
-
 const { fullName, title, institute, research_areas } = profile
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -65,22 +48,28 @@ const { fullName, title, institute, research_areas } = profile
     />
   </section>
 
-  {/* Render Education Section if there are any ordered educations */}
+  <!-- Research Areas -->
+  <section class="py-12 border-b">
+    <Grid gridTitle="Research Areas" gridItems={research_areas} />
+  </section>
+
+  <!-- Recent Publications -->
+  <section class="py-12 border-t">
+    <ArticleList listTitle="Recent Publications" listItems={publications} />
+  </section>
+
+  {/* Education Section */}
   {orderedEducations.length > 0 && (
     <section class="mb-12">
-      <h2 class="text-2xl font-bold mb-6 border-b pb-2">
-        Education
-      </h2>
+      <h2 class="text-2xl font-bold mb-6 border-b pb-2">Education</h2>
       <CvTimeline elements={orderedEducations} colored={true} />
     </section>
   )}
 
-  {/* Render Experience Section if there are any ordered experiences */}
+  {/* Experiences Section */}
   {orderedExperiences.length > 0 && (
     <section class="mb-12">
-      <h2 class="text-2xl font-bold mb-6 border-b pb-2">
-        Experiences
-      </h2>
+      <h2 class="text-2xl font-bold mb-6 border-b pb-2">Experiences</h2>
       <CvTimeline elements={orderedExperiences} colored={true} />
     </section>
   )}
