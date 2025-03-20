@@ -11,9 +11,8 @@ export const profile = {
 				{ title : 'Biomarker discovery' },
 			], 
 	skill_list: [
-				{ title : 'R' ,
-				  title : 'Python',
-				},
+				{ title : 'R' },
+				{ title : 'Python'},
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 			],
 }
