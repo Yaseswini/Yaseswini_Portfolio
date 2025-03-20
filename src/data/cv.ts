@@ -2,38 +2,38 @@
 
 export const experiences = [
 	{
-		company: 'University of Virginia',
+		company: 'University of Virginia,Charlottesville',
 		time: '2024 Jan - Present',
 		title: 'Research Scientist,Bioinformatics & Computational Biology',
-		location: 'Remote',
+		//location: 'Remote',
 		description: '',
 	},
 	{
-		company: 'Bristol Myers Squibb',
+		company: 'Bristol Myers Squibb,Cambridge,MA (Remote)',
 		time: '2022 Jun - 2022 Aug',
 		title: 'Summer Research Intern (Predictive Sciences)',
-		location: 'Remote',
+		//location: 'Remote',
 		description: '',
 	},
 	{
-		company: 'University of Virginia',
+		company: 'University of Virginia,Charlottesville',
 		time: '2017 Mar - 2018 Aug',
 		title: 'Bioinformatics Analyst',
-		location: 'Charlottesville',
-		description: '',
+		//location: 'Charlottesville',
+		//description: '',
 	},
 	{
-		company: 'Weill Cornell Medicine',
+		company: 'Weill Cornell Medicine,New York',
 		time: '2015 Oct - 2017 Feb',
 		title: 'Bioinformatics Analyst',
-		location: 'New York',
+		//location: 'New York',
 		description: '',
 	},
 	{
 		company: 'Indiana University - Purdue University(IUPUI), Indianapolis',
 		time: '2013 Aug - 2015 May',
 		title: 'Bioinformatician',
-		location: 'Indianapolis',
+		//location: 'Indianapolis',
 		description: `•Analyzed and identified mutational landscape of RNA binding proteins across 6000 cancer genomics constituting 26 cancer types from TCGA consortium.\n•Identified splicing alternations contributing to endocrine resistance in breast cancer cell lines in collaborative research with IU School of Medicine.\n•Curated RNA binding proteins and their known functional characteristics identified in humans to construct a database useful for researchers in the field`,
 	},
 	// {
