@@ -47,24 +47,24 @@ export const experiences = [
 
 export const education = [
 	{
-		school: 'University of Virginia',
+		school: 'University of Virginia,Charlottesville,Virginia',
 		time: '2018 Aug - 2023 December',
 		degree: 'Doctor of Philosophy(PhD)',
-		location: 'Charlottesville,Virginia',
+		location: '',
 		description: '',
 	},
 	{
-		school: 'University of Hyderabad',
+		school: 'University of Hyderabad,Hyderabad,India',
 		time: '2011 Aug - 2013 May',
 		degree: 'Masters of Technology(M.Tech)',
-		location: 'Hyderabad,India',
+		location: '',
 		description: '',
 	},
 	{
-		school: 'Sreenidhi Institute of Science and Technology (JNTU affiliated)',
+		school: 'Sreenidhi Institute of Science and Technology (JNTU affiliated),Hyderabad,India',
 		time: '2007 Aug - 2011 Apr',
 		degree: 'Bachelor of Technology(B.Tech)',
-		location: 'Hyderabad,India',
+		location: '',
 		description: '',
 	},
 	// {
