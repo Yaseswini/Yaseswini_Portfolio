@@ -14,7 +14,7 @@ export const profile = {
 			], 
 	skill_list: [
 				{ title : 'R' },
-				{ title : 'Python'},
+				{ title : 'Python' },
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 			],
 }

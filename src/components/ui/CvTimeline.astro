@@ -9,6 +9,21 @@ interface Props {
 
 const { elements, colored } = Astro.props
 ---
+<style>
+  pre {
+    white-space: pre-wrap;           /* Ensure text wraps while respecting newlines */
+    word-wrap: break-word;           /* Allow long words to break and wrap onto the next line */
+    max-width: 100%;                 /* Ensure it doesn't overflow beyond the container */
+    overflow-wrap: break-word;       /* Break long words */
+    word-break: break-word;          /* Break long words if necessary */
+    display: block;                  /* Ensure the pre element behaves as a block-level element */
+    width: 100%;                     /* Ensure it takes up the full width of the container */
+    box-sizing: border-box;          /* Prevent content from overflowing container due to padding/margin */
+    font-style: italic;              /* Make text italic */
+    font-size: 16px;                 /* Change font size */
+    font-family: 'Courier New', Courier, monospace;  /* Change the font to a monospaced font */
+  }
+</style>
 
 <ul
 	class='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'
