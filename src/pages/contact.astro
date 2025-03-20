@@ -12,12 +12,7 @@ import { social } from '@/settings' // Assuming social info is in settings
 import SocialIcons from '@/components/ui/SocialIcons.astro'
 
 const { fullName, title, institute, research_areas , skill_list } = profile
-
-// Filtered social object with only email and linkedin
-const filteredSocial = {
-  email: social.email,
-  linkedin: social.linkedin
-}
+const { email , linkedin } = social
 
 ---
 
@@ -31,9 +26,10 @@ const filteredSocial = {
       </p>
   </section>
   
-  <!-- Social icons -->
-  <section class="social-icons">
-    <SocialIcons social={filteredSocial} />
+  <!-- Social Icons Section -->
+  <section class="py-12 border-b">
+    <!-- Conditionally render SocialIcons component with only email and linkedin -->
+    <SocialIcons social={{ email, linkedin }} />
   </section>
   
 </Layout>
