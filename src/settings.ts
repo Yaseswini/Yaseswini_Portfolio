@@ -1,5 +1,5 @@
 export const profile = {
-	fullName: 'Yaseswini Neelamraju,PhD',
+	fullName: 'Yaseswini Neelamraju',
 	title: 'Research Scientist, Bioinformatics & Computational Biology',
 	institute: 'University of Virginia',
 	author_name: 'Yaseswini Neelamraju', // Author name to be highlighted in the papers section
