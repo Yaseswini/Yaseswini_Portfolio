@@ -10,7 +10,7 @@ export const profile = {
 				{ title : 'Machine learning' } , 
 				{ title : 'Biomarker discovery' },
 			], 
-	skills: [
+	skill_list: [
 				{ title : 'R' ,
 				  title : 'Python',
 				},
