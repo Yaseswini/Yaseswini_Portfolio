@@ -4,13 +4,18 @@ export const profile = {
 	institute: 'University of Virginia',
 	author_name: 'Yaseswini Neelamraju', // Author name to be highlighted in the papers section
 	research_areas: [
-			{ title : 'Bioinformatics' } , 
-			{ title : 'Oncology' },
-			{ title : 'Hematology Oncology' },
-			{ title : 'Machine learning' } , 
-			{ title : 'Biomarker' },
+				{ title : 'Bioinformatics' } , 
+				{ title : 'Oncology' },
+				{ title : 'Hematology Oncology' },
+				{ title : 'Machine learning' } , 
+				{ title : 'Biomarker discovery' },
+			], 
+	skills: [
+				{ title : 'R' ,
+				  title : 'Python',
+				},
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
-	],
+			],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
