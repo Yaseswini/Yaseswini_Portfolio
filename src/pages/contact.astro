@@ -11,7 +11,14 @@ import SocialIcons from '@/components/ui/SocialIcons.astro'
 
 const { fullName, title, institute, research_areas , skill_list } = profile
 
+// Filtered social object with only email and linkedin
+const filteredSocial = {
+  email: social.email,
+  linkedin: social.linkedin
+}
+
 ---
+
 
 <Layout>
 
@@ -23,6 +30,8 @@ const { fullName, title, institute, research_areas , skill_list } = profile
   </section>
   
   <!-- Social icons -->
-  <div><SocialIcons/></div>
+  <section class="social-icons">
+    <SocialIcons social={filteredSocial} />
+  </section>
   
 </Layout>
