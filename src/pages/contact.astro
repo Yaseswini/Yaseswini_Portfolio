@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+import { profile } from '@/settings'
+import { publications } from '@/data/cv'
+import ProfilePictures from '@/assets/profile_pictures.jpg'
+import Hero from '@/components/ui/Hero.astro'
+import Grid from '@/components/ui/Grid.astro'
+import ArticleList from '@/components/ui/ArticleList.astro'
+import SocialIcons from '@/components/ui/SocialIcons.astro'
+
+const { fullName, title, institute, research_areas , skill_list } = profile
+
+---
+
+<Layout>
+
+  <!-- Hero Section -->
+  <section class='flex items-center gap-12 border-b pb-12'>
+    <p>
+        I'm currently open to new opportunities and collaborations in <strong>bioinformatics</strong>, <strong>genomics</strong>, and <strong>machine learning</strong>. Feel free to reach out if you have a question, project idea, or just want to connect!
+      </p>
+  </section>
+  
+  <!-- Social icons -->
+  <div class='mx-4'>
+      <SocialIcons/>
+    </div>
+  
+</Layout>
