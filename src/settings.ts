@@ -4,7 +4,11 @@ export const profile = {
 	institute: 'University of Virginia',
 	author_name: 'Yaseswini Neelamraju', // Author name to be highlighted in the papers section
 	research_areas: [
-		
+			{ title : 'Bioinformatics' } , 
+			{ title : 'Oncology' },
+			{ title : 'Hematology Oncology' },
+			{ title : 'Machine learning' } , 
+			{ title : 'Biomarker' },
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
