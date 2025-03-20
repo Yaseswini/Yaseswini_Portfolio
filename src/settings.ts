@@ -8,7 +8,7 @@ export const profile = {
 				  description: '' , 
 				},
 				{ title : 'Oncology' },
-				{ title : 'Hematology Oncology' },
+				{ title : 'Hematology Oncology' , description : 'Experienced in conducting clinical research, utilizing bioinformatics to analyze multi-omic data and uncover new therapeutic targets. Involved in cutting-edge clinical trials and the development of novel cancer therapies' },
 				{ title : 'Machine learning' } , 
 				{ title : 'Biomarker discovery' },
 			], 
