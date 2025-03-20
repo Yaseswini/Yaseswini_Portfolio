@@ -34,7 +34,7 @@ export const experiences = [
 		time: '2013 Aug - 2015 May',
 		title: 'Bioinformatician',
 		location: 'Indianapolis',
-		description: '',
+		description: '1. Analyzed and identified mutational landscape of RNA binding proteins across 6000 cancer genomics constituting 26 cancer types from TCGA consortium\n2. Identified splicing alternations contributing to endocrine resistance in breast cancer cell lines in collaborative research with IU School of Medicine\n3.Curated RNA binding proteins and their known functional characteristics identified in humans to construct a database useful for researchers in the field',
 	},
 	// {
 	// 	company: 'Radium Institute (Institut du Radium)',
