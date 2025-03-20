@@ -37,18 +37,11 @@ const { elements, colored } = Astro.props
 					<div class='text-lg font-black'>{isExperience(element) ? element.title : element.degree}</div>
 					<div>{isExperience(element) ? element.company : element.school}</div>
 					<div>{element.location}</div>
-					<div>
-					  {element.description.split('\n').map((line, index) => (
-					    <React.Fragment key={index}>
-					      {line}
-					      <br />
-					    </React.Fragment>
-					  ))}
-					</div>
-
+					<div><pre>{element.description}</pre></div>
 				</div>
         <hr class:list={[{ 'bg-accent': colored }]} />
 			</li>
 		))
 	}
 </ul>
+
