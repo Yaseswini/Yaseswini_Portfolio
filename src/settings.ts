@@ -3,6 +3,20 @@ export const profile = {
 	title: 'Research Scientist, Bioinformatics & Computational Biology',
 	institute: '',
 	author_name: 'Yaseswini Neelamraju', // Author name to be highlighted in the papers section
+	fullName_navbar: 'Yaseswini Neelamraju,PhD',
+	key_competencies: [
+							{ title: 'Mentorship' , 
+							  description: 'Since 2022, I’ve mentored undergraduate students in computational biology, guiding them in research and bioinformatics, helping them develop essential skills in the field' 
+							},
+							{ title: 'Collaboration',
+							  description: 'I’ve worked with global researchers, using my bioinformatics expertise to drive impactful oncology collaborations, advancing cancer genomics and improving patient outcomes'
+							},
+							{
+							   title: 'Communication',
+							   description:'I communicate complex bioinformatics concepts through publications and presentations, enabling effective collaboration and contributing to the advancement of research and bioinformatics solutions'
+							},
+					   ],
+	//Research areas:
 	research_areas: [
 				{ title: 'Bioinformatics' , 
 				  description: '' , 
@@ -17,15 +31,7 @@ export const profile = {
 				{ title: 'Python' },
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 			],
-	fullName_navbar: 'Yaseswini Neelamraju,PhD',
-	key_competencies: [
-				{ title: 'Mentorship' , 
-				  description: 'Training undergraduate students in computational biology since 2022' 
-				},
-				{ title: 'Collaboration',
-				  description: 'I’m passionate about working with researchers worldwide, leveraging my expertise in bioinformatics to drive impactful collaborations in oncology'
-				}
-			],
+
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display

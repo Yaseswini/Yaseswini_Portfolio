@@ -7,13 +7,18 @@ import SocialIcons from './SocialIcons.astro'
 const {fullName, title, institute, profilePicture} = Astro.props
 ---
 <div class='flex-1'>
-  <h1 class='text-4xl font-bold mb-4'>
+  <h1 class='text-3xl font-bold mb-2'>
     Welcome! I'm <span class='text-secondary'>{fullName}</span>
   </h1>
-  <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
+  <p class='text-xl text-gray-600 mb-2'>{title}{institute ? ` at ${institute}` : ''}</p>
   
-  <p class='text-lg mb-6'>
-    I am bioinformatics scientist with 10 years of professional experience in analyzing next-generation DNA and RNA sequencing data primarily from human subjects diagnosed with cancer. I am committed to developing and applying computational tools to new and/or existing genomic data and contributing to translational research.
+  <p class='text-lg mb-2'>
+    I am a Bioinformatics Scientist with over 10 years of experience in analyzing next-generation DNA and RNA sequencing data, primarily from cancer patients. My work is centered around developing and applying cutting-edge computational tools to genomic data, driving advancements in translational research to improve patient outcomes.
+    <em>You can also <a href="Neelamraju_Yaseswini_CurriculumVitae.pdf" download style="text-decoration: underline; color: blue; font-style: italic;">click here</a> to download my CV.</em>
+    <br>
+    I am currently volunteering as a web page developer for <a href="https://www.linkedin.com/groups/13074137/" target="_blank" style="text-decoration: underline; color: blue; font-style: italic;">Boston-area Women in Bioinformatics</a>, contributing to the development of their online presence.
+    <br>
+    When I am not diving into the data, I enjoy hiking with my family, tending to my garden, photography, and tapping into my creative side by painting mandalas!
   </p>
 
   {/*
@@ -21,6 +26,7 @@ const {fullName, title, institute, profilePicture} = Astro.props
     <SocialIcons />
   </div>
   */}
+
 </div>
 <div class='size-72 lg:block hidden'>
   <!-- Add your profile image -->
