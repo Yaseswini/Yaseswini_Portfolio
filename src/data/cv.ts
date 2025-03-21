@@ -11,7 +11,7 @@ export const experiences = [
 	{
 		company: 'Bristol Myers Squibb,Cambridge,MA (Remote)',
 		time: '2022 Jun - 2022 Aug',
-		title: 'Summer Research Intern (Predictive Sciences)',
+		title: 'Intern (Predictive Sciences)',
 		//location: 'Remote',
 		description: '',
 	},

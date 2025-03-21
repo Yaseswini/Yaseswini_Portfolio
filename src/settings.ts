@@ -1,21 +1,30 @@
 export const profile = {
 	fullName: 'Yaseswini Neelamraju',
 	title: 'Research Scientist, Bioinformatics & Computational Biology',
-	institute: 'University of Virginia',
+	institute: '',
 	author_name: 'Yaseswini Neelamraju', // Author name to be highlighted in the papers section
 	research_areas: [
-				{ title : 'Bioinformatics' , 
+				{ title: 'Bioinformatics' , 
 				  description: '' , 
 				},
-				{ title : 'Oncology' },
-				{ title : 'Hematology Oncology' , description : 'Experienced in conducting clinical research, utilizing bioinformatics to analyze multi-omic data and uncover new therapeutic targets. Involved in cutting-edge clinical trials and the development of novel cancer therapies' },
-				{ title : 'Machine learning' } , 
-				{ title : 'Biomarker discovery' },
+				{ title: 'Oncology' },
+				{ title: 'Hematology Oncology' , description : 'Experienced in conducting clinical research, utilizing bioinformatics to analyze multi-omic data and uncover new therapeutic targets. Involved in cutting-edge clinical trials and the development of novel cancer therapies' },
+				{ title: 'Machine learning' } , 
+				{ title: 'Biomarker discovery' },
 			], 
 	skill_list: [
-				{ title : 'R' },
-				{ title : 'Python' },
+				{ title: 'R' },
+				{ title: 'Python' },
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+			],
+	fullName_navbar: 'Yaseswini Neelamraju,PhD',
+	key_competencies: [
+				{ title: 'Mentorship' , 
+				  description: 'Training undergraduate students in computational biology since 2022' 
+				},
+				{ title: 'Collaboration',
+				  description: 'I’m passionate about working with researchers worldwide, leveraging my expertise in bioinformatics to drive impactful collaborations in oncology'
+				}
 			],
 }
 

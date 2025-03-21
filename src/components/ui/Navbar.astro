@@ -8,14 +8,14 @@ import { template } from '@/settings'
 
 const isBlogPopulated = await getCollection('blog').then(collection => collection.length > 0)
 
-const {fullName, title} = profile
+const {fullName, title,fullName_navbar} = profile
 ---
 <aside
-	class='px-4 pt-4 h-screen w-[13rem] bg-base-200 text-base-content flex flex-col'
+	class='px-4 pt-4 h-screen w-[12rem] bg-base-200 text-base-content flex flex-col'
 >
 	<div class='flex flex-col my-8 justify-between h-full'>
 		<div>
-			{/*
+			{/* Don't include profile picture and name 
 			<div class='flex justify-center items-center flex-col'>
 				<Image
 					class='mask mask-circle size-44'
@@ -25,22 +25,27 @@ const {fullName, title} = profile
 				<h1 class="text-lg font-black mt-8 hidden lg:block">{title} <span>{fullName}</span></h1>
 			</div>
 			*/}
+			<div class='flex justify-center items-center flex-col'>
+			  <h1 class="text-lg mt-8 hidden lg:block text-center">
+			    <span>{fullName_navbar}</span>
+			  </h1>
+			</div>
 			<div class='mx-4 mt-16'>
 				<ul class='space-y-4 menu grow shrink menu-md overflow-y-auto'>
 					<li>
-                        <a href=`${template.base}/` class='text-lg'>Home</a>
+                        <a href=`${template.base}/index` class='text-lg italic'>Home</a>
 					</li>
 					<li>
-                        <a href=`${template.base}/education_and_work` class='text-lg'>Education & Work</a>
+                        <a href=`${template.base}/education_and_work` class='text-lg italic'>Education & Work</a>
                     </li>
 					<li>
-                        <a href=`${template.base}/research` class='text-lg'>Research</a>
+                        <a href=`${template.base}/research` class='text-lg italic'>Research</a>
 					</li>
 					<li>
-                        <a href=`${template.base}/publications` class='text-lg'>Publications</a>
+                        <a href=`${template.base}/publications` class='text-lg italic'>Publications</a>
 					</li>
 					<li>
-						<a href=`${template.base}/contact` class='text-lg'>Contact</a>
+						<a href=`${template.base}/contact` class='text-lg italic'>Contact</a>
 					</li>
                     {isBlogPopulated &&
 					<li>
