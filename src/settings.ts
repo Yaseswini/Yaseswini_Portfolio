@@ -18,22 +18,25 @@ export const profile = {
 					   ],
 	//Research areas:
 	research_areas: [
-				{ title: 'Bioinformatics' , 
-				  description: '' , 
-				},
 				{ title: 'Oncology' },
-				{ title: 'Hematology Oncology' , description : 'Experienced in conducting clinical research, utilizing bioinformatics to analyze multi-omic data and uncover new therapeutic targets. Involved in cutting-edge clinical trials and the development of novel cancer therapies' },
+				{ title: 'Hematological Malignancies' },
+				{ title: 'Bioinformatics' },
 				{ title: 'Machine learning' } , 
 				{ title: 'Biomarker discovery' },
 			], 
-	skills_ds: [
-				{ title: 'R' },
-				{ title: 'Python' },
-			],
-	skills_da:[
-				{ title: 'R' },
-				{ title: 'Python' },
-			],
+
+	skill_list: [
+
+				{ title: 'Data science' , description: 'Clustering, Predictive Modelling' },
+				{ title: 'Omics' , 
+				  description: `Epigenomics\n(Bisulphite sequencing,ATAC-seq,ChIP-seq)\nTranscriptomics\n(Bulk and single-cell RNAsequencing, Long-read sequencing, CITE-seq, RNA splicing)`
+				},
+				{ title: 'Scripting & Programming' , description: 'C, Perl , R , Python' },
+				{ title: 'Workflow Management' , description: 'Nextflow' },
+				{ title: 'Web development' , description: 'HTML,CSS,RShiny' },
+
+	],	
+	
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
@@ -64,3 +67,5 @@ export const seo = {
 	default_description: 'Astro Academia is a template for academic websites.',
 	default_image: '/images/astro-academia.png',
 }
+
+//Experienced in conducting clinical research, utilizing bioinformatics to analyze multi-omic data and uncover new therapeutic targets. Involved in cutting-edge clinical trials and the development of novel cancer therapies

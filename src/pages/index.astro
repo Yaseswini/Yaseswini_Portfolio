@@ -17,7 +17,7 @@ const { fullName, title, institute, research_areas , skill_list , key_competenci
 <Layout>
 
   <!-- Hero Section -->
-  <section class='flex items-center gap-8 border-b pb-6'>
+  <section class='flex items-center gap-8 pb-6'>
     <Hero
       fullName={fullName}
       title={title}
@@ -25,32 +25,33 @@ const { fullName, title, institute, research_areas , skill_list , key_competenci
       profilePicture={ProfilePictures}
     />
   </section>
-  
-  <!-- Key competencies -->
-  <section class='py-10 border-b'>
-    <Grid gridTitle='Key competencies' gridItems={key_competencies} />
-  </section>
-
-
+    
   {/*
-  <!-- Research Areas -->
-  <section class='py-12 border-b'>
-    <Grid gridTitle='Research Areas' gridItems={research_areas} />
-  </section>
+      <!-- Key competencies -->
+      <section class='py-10 border-b'>
+        <Grid gridTitle='Key competencies' gridItems={key_competencies} />
+      </section>
   */}
 
   {/*
-  <!-- Skills --> 
-  <section class='py-12 border-b'>
-    <Grid gridTitle='Skills' gridItems={skill_list} />
-  </section>
+      <!-- Research Areas -->
+      <section class='py-12 border-b'>
+        <Grid gridTitle='Research Areas' gridItems={research_areas} />
+      </section>
+  */}
+
+  {/*
+      <!-- Skills --> 
+      <section class='py-12 border-b'>
+        <Grid gridTitle='Skills' gridItems={skill_list} />
+      </section>
   */} 
 
   {/*
   <!-- Recent Publications -->
-  <section class='py-12 border-t'>
-    <ArticleList listTitle='Recent Publications' listItems={publications} />
-  </section>
+      <section class='py-12 border-t'>
+        <ArticleList listTitle='Recent Publications' listItems={publications} />
+      </section>
   */}
 
   <!-- Education & Experiences -->

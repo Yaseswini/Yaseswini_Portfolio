@@ -4,23 +4,43 @@ import { profile } from "@/settings";
 import BetterIcon from "@/components/ui/BetterIcon.astro";
 import List from "@/components/ui/List.astro";
 import {RESEARCH_ICONS} from "@/data/researchIcons";
+import Grid from '@/components/ui/Grid.astro'
 
-const { research_areas } = profile;
+const { research_areas , key_competencies , skill_list } = profile;
 ---
 
 <Layout title="Research">
   <div class="prose max-w-none">
 
-
-      <h1 class="text-3xl font-bold mb-8">Research Statement</h1>
-      <div class="mb-12">
-        <p class="text-lg mb-6">
-          My current research focuses on understanding the role of .
-        </p>
-        <p class="text-lg mb-6">
-          
+      <h2 class="text-2xl font-bold mb-4 text-center">Research Statement</h2>
+      <div class="mb-5">
+        <p class="text-lg mb-6 text-justify">
+        My current research seeks to uncover the key determinants of leukemogenesis in older adults diagnosed with Acute Myeloid Leukemia (AML). I focus on identifying the genetic foundations of disease development and resistance to uncover potential therapeutic interventions. Specifically, I investigate the roles of inflammation and metabolic dysregulation in AML progression and resistance.
+        <br><br>
+        I am also deeply intrigued by RNA binding proteins and their crucial role in RNA biology, particularly in the establishment and progression of cancers like AML. My research currently explores the impact of RNA splicing in AML patients and its potential implications for disease progression and treatment strategies.
+        <br><br>
+        Additionally, I leverage advanced bioinformatics and predictive modeling techniques to identify novel risk groups, with the aim of developing more personalized and effective treatments for AML patients.
         </p>
       </div>
+
+      {/*
+      <!-- Research areas --> 
+       <section class='py-2 border-b'>
+        <Grid gridTitle='Research areas' gridItems={research_areas} />
+      </section>
+      */}
+
+      <!-- Key competencies -->
+      
+      <section class='py-4 border-b'>
+        <Grid gridTitle='Key competencies' gridItems={key_competencies} />
+      </section>
+
+      <!-- Research skills -->
+      <section class='py-4 border-b'>
+        <Grid gridTitle='Skills' gridItems={skill_list} />
+      </section>
+
 
       {/*
         <h2 class="text-2xl font-bold mb-6">Research Impact</h2>

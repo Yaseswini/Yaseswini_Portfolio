@@ -6,28 +6,30 @@ export const experiences = [
 		time: '2024 Jan - Present',
 		title: 'Research Scientist,Bioinformatics & Computational Biology',
 		//location: 'Remote',
-		description: '',
+		description: '\nIdentifying splicing alterations in patients diagnosed with AML',
 	},
 	{
 		company: 'Bristol Myers Squibb,Cambridge,MA (Remote)',
 		time: '2022 Jun - 2022 Aug',
 		title: 'Intern (Predictive Sciences)',
 		//location: 'Remote',
-		description: '',
+		description: `\n•Reproduced and applied an existing tumor microenvironment (TME) subtype method to pancreatic cancer data from TCGA
+					  •Modified the existing Tumor micro environment (TME) subtype classification approach for solid tumors
+					  •Developed an R shiny application implementing existing and improved TME classification method on tumor data`,
 	},
 	{
 		company: 'University of Virginia,Charlottesville',
 		time: '2017 Mar - 2018 Aug',
 		title: 'Bioinformatics Analyst',
 		//location: 'Charlottesville',
-		//description: '',
+		description: `\nContributed to the study that identified genetic basis of disease relapse in AML\n`,
 	},
 	{
 		company: 'Weill Cornell Medicine,New York',
 		time: '2015 Oct - 2017 Feb',
 		title: 'Bioinformatics Analyst',
 		//location: 'New York',
-		description: '',
+		description: '\nIdentified DNA methylation and transcriptional changes in patients diagnosed and relapsed with acute myeloid leukemia (AML) and MDS',
 	},
 	{
 		company: 'Indiana University - Purdue University(IUPUI), Indianapolis',
@@ -51,14 +53,18 @@ export const education = [
 		time: '2018 Aug - 2023 December',
 		degree: 'Doctor of Philosophy(PhD)',
 		location: '',
-		description: '',
+		description: `
+					  •Identified clinical subgroups in older adults diagnosed with AML enrolled in ECOG-ACRIN’s clinical trial
+                      •Identified transcriptional signatures contributing to leukemogenesis in the older adults diagnosed with AML enrolled in ECOG-ACRIN’s clinical trial
+					  •Developing an XGBoost-based prognostic model utilizing DNA methylation data (bisulfite sequencing) in older adults diagnosed with (AML) enrolled in ECOG-ACRIN’s clinical trial
+					  •Identified transcriptional and DNA methylation changes contributing to myelodysplastic syndrome upon tet2 knockdown in a zebrafish model`,
 	},
 	{
 		school: 'University of Hyderabad,Hyderabad,India',
 		time: '2011 Aug - 2013 May',
 		degree: 'Masters of Technology(M.Tech)',
 		location: '',
-		description: '',
+		description: 'Thesis: Integrating disease-gene and protein-protein interactions to identify candidate genes for Psoriasis using network theory',
 	},
 	{
 		school: 'Sreenidhi Institute of Science and Technology (JNTU affiliated),Hyderabad,India',
