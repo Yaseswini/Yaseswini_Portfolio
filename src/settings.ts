@@ -26,12 +26,14 @@ export const profile = {
 				{ title: 'Machine learning' } , 
 				{ title: 'Biomarker discovery' },
 			], 
-	skill_list: [
+	skills_ds: [
 				{ title: 'R' },
 				{ title: 'Python' },
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 			],
-
+	skills_da:[
+				{ title: 'R' },
+				{ title: 'Python' },
+			],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
